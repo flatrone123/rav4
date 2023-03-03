@@ -1,0 +1,131 @@
+/* ]
+Темной темы
+#303841
+#00ADB5
+#EEEEEE
+#FF5722
+
+светлой темы
+#F4F9F4
+#C4E3CB
+#8AAE92
+#616161
+
+№2
+#E3D9CA
+#95A792
+#596C68
+#403F48
+ */
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    transition: 0.5s;
+}
+
+body {
+    background: #E3D9CA;
+    color: #403F48;
+    font-family: sans-serif;
+}
+
+.container {
+    max-width: 1024px;
+    margin: auto;
+}
+
+header {
+    padding: 10px;
+
+    background: #95A792;
+}
+
+.head {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.head .logo {
+    width: 4rem;
+}
+
+nav{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+nav a{
+    padding: 10px 20px;
+
+    font-size: 20px;
+    text-decoration: none;
+    color: #403F48;
+
+    border-radius: 5px;
+}
+
+nav a:hover {
+    background: #27272c;
+    color: white;
+}
+
+
+
+
+
+/* main */
+
+.about {
+    padding: 3% 0;
+}
+
+.future {
+    padding: 3% 0;
+
+   background: #95A792;
+}
+
+.future h2 {
+    text-align: center;
+}
+
+.future h3 {
+    padding: 7%;
+}
+
+.problems {
+    display: flex;
+    justify-content:space-between;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* table */
+table {
+    margin: auto;
+}
+
+tr:nth-child(odd) {
+    background: #596C68;
+    color: #E3D9CA;
+}
+
+td {
+    padding: 0.8rem;
+}
