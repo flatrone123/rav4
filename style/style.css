@@ -35,7 +35,7 @@ body {
 .container {
     max-width: 1024px;
     margin: auto;
-    padding: 3%;
+    padding: 7% 3%;
 }
 
 header {
@@ -127,6 +127,7 @@ nav a:hover {
 /* table */
 table {
     margin: auto;
+    border-collapse: collapse;
 }
 
 tr:nth-child(odd) {
@@ -146,14 +147,15 @@ td {
 
 
 @media (max-width:480px) {
+
     nav {
         display: none;
-
     }
 
     nav a{
-        flex-basis: 100%;
         width: 100%;
+        display: block;
+        text-align: right;
     }
 
     .burger-menu img {
