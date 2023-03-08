@@ -7,7 +7,13 @@
         <title>Document</title>
 
         <link rel="stylesheet" href="style/style.css">
-    </head>
+
+        <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/morris.js/0.5.1/morris.css">
+<script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.0/jquery.min.js"></script>
+<script src="//cdnjs.cloudflare.com/ajax/libs/raphael/2.1.0/raphael-min.js"></script>
+<script src="//cdnjs.cloudflare.com/ajax/libs/morris.js/0.5.1/morris.min.js"></script>
+    
+</head>
     <body>
         <header>
             <div class="container">
@@ -15,7 +21,7 @@
                     <a href="index.html"><img class="logo" src="logo.png" alt=""></a>
                     <nav>
                         <a href="">Ремонт</a>
-                        <a href="">Магазины и запчасти</a>
+                        <a href="zapchasti.html">Магазины и запчасти</a>
                         <a href="">Советы</a>
                         <a href="finance.html">Финансы</a>
                     </nav>
@@ -28,44 +34,33 @@
         </header>
 
         
-        <div class="container">
-            <table>
-                <tr>
-                    <th>Наименование</th>
-                    <th>Цена</th>
-                    <th>Магазин</th>
-                    <th>Дата</th>
-                </tr>
-                <tr>
-                    <td>Самодельный сканер</td>
-                    <td>3150</td>
-                    <td>Алиэкспресс</td>
-                    <td>март 2023</td>
-                </tr>
-                <tr>
-                    <td>Высоковольтные провода</td>
-                    <td>5000</td>
-                    <td></td>
-                    <td>март 2023</td>
-                </tr>
-                <tr>
-                    <td>Керосин</td>
-                    <td></td>
-                    <td>Базар</td>
-                    <td>март 2023</td>
-                </tr>
-                <tr>
-                    <td>Контейнер</td>
-                    <td></td>
-                    <td>Базар</td>
-                    <td>март 2023</td>
-                </tr>
-                <tr>
-                    <td>Итого:</td>
-                    <td>123</td>
-                </tr>
-            </table>
-        </div>
+        <div id="myfirstchart" style="height: 250px; max-width: 100%;"></div>
+
+
+        <script>new Morris.Bar ({
+            element: 'myfirstchart',
+            // Chart data records -- each entry in this array corresponds to a point on
+            // the chart.
+            data: [
+              { year: 'двигатель', value: 200000 },
+              { year: 'электрика', value: 10000 },
+              { year: 'остальное', value: 5000 },
+              { year: 'ходовая', value: 5000 },
+              { year: 'бензин', value: 20000 }
+            ],
+            // The name of the data record attribute that contains x-values.
+            xkey: 'year',
+            // A list of names of data record attributes that contain y-values.
+            ykeys: ['value'],
+            // Labels for the ykeys -- will be displayed when you hover over the
+            // chart.
+            labels: ['Value'],
+            colors: ['green', 'green'],
+          });</script>
+
+
+
+~
         <script src="js/scipt.js"></script>
 
     </body>
